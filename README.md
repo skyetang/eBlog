@@ -14,5 +14,9 @@
 2、数据库在`config.php`文件中进行设置<br>
 3、搭建好本地服务器即可查看<br>
 
-####欢迎大神指导！ :)
+####欢迎大神指导！ :)  
 --------------- 
+下面是几张效果图：<br>
+* ![](https://github.com/SkyeTang/eBlog/blob/master/Public/img/index.png "主页")
+* ![](https://github.com/SkyeTang/eBlog/blob/master/Public/img/adminlogin.png "后台登录")
+* ![](https://github.com/SkyeTang/eBlog/blob/master/Public/img/adminindex.png "后台主页")  
