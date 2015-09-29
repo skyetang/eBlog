@@ -1,0 +1,6 @@
+<Ifmodule mode_rewrite.c>  
+RewriteEngine on
+ReworteCond %{REQUEST_FILENAME}!-d;
+ReworteCond %{REQUEST_FILENAME}!-f;
+RewriteRule ^（.*）$ index.php /$1[QSA.PT.L];
+</Ifmodule>
