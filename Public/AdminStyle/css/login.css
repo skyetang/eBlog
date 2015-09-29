@@ -1,0 +1,95 @@
+@charset "utf-8";
+/*
+ * 后台登录界面
+ * 
+ * author:skye
+ * date:2015.09.13
+ * version:1.0
+ * 
+ */
+body{
+	margin: 0;
+	padding: 0; 
+	font-family: "微软雅黑";
+	font-size: 13px;
+    }
+.div_bg{
+	background: url(img/admin_bg02.jpg) no-repeat center center;
+	background-size: cover;
+	opacity: 0.9;
+	overflow: hidden;
+	min-height: 580px;
+	}
+.login_div{
+	width: 380px;
+	margin: 150px auto;
+	background-color:#c9d2b2;
+	opacity: 0.7;
+	padding: 20px;
+	
+	-moz-box-shadow:2px 3px 2px #333 ; 
+	-moz-box-shadow:2px 3px 2px #333 ;  
+	box-shadow: 2px 3px 2px #333 ; 
+	border-radius: 5px;
+  
+}
+.login_div label{
+	cursor: pointer;
+}
+.login_yhm{
+	width: 280px;
+	height: 40px;
+	margin: 0px auto 15px;
+	padding-left: 10px;
+	line-height: 40px;
+	background: white;
+}
+.login_yhm input{
+	border: none;
+	height: 26px;
+	line-height: 26px;
+	outline: none;
+}
+
+.login_yzm{
+	width: 280px;
+	height: 40px;
+	margin: 0px auto 15px;
+	padding-left: 10px;
+	line-height: 40px;
+	background: white;
+}
+
+.login_yzm input{
+	width: 80px;
+	padding-left: 3px;
+    margin-right: 15px;
+}
+
+.login_yzm ._yzm{
+	width: 80px;
+	
+}
+
+.login_dl{
+	width: 280px;
+	height: 40px;
+	margin: 0px auto 15px;
+	text-align: right;
+	padding-left: 10px;
+	line-height: 40px;
+}
+
+.login_dl button{
+	width: 120px;
+	height: 40px;
+	background-color:#649e7c;
+	border: 0;
+	cursor: pointer;
+}
+.login_dl button:hover{
+	background: red;
+	color: white;
+}
+
+

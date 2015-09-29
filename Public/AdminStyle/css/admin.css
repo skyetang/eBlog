@@ -1,0 +1,267 @@
+@charset "utf-8";
+/*
+ * 后台主页面
+ * 
+ * author:skye
+ * date:2015.09.15
+ * version:1.0
+ * 
+ */
+
+
+/***********************  admin顶部header ************************************/
+body,img,p,label,span,ul,li,ol,dl,dt,dd,form,input,th,td,h1,h2,h3,h4,h5{
+	margin: 0;
+	padding: 0;
+	border: 0; 
+	outline: 0;}
+body{font-family: "微软雅黑"; font-size: 13px;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: black;}
+.header{
+	width: 100%;
+	height: 45px;
+	background: cornflowerblue;
+}
+.heder_title{
+	line-height: 40px;
+	font-size: 1.6em;
+	color:whitesmoke;
+	padding-left: 30px;
+	float: left;
+}
+.heder_title span{
+	vertical-align: middle;
+	min-width: 25px;
+	display: inline-block;
+}
+.header:after{
+	display: block;
+	content: " ";
+	clear: both;
+}
+.login_status{
+	width: 150px;		
+	text-align: center;
+	position: relative;
+	float: right;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.login_status li{
+	padding: 0;
+	
+}
+.linght_blue{
+	background:slateblue;
+	line-height: 45px;
+}
+.linght_white{
+	width: 160px;
+	line-height: 35px;
+	padding: 5px;
+	position: absolute;
+	right: 0;
+	display: none;
+	background:white;
+	-webkit-box-shadow: gray 0px 2px 4px;	
+	-moz-box-shadow: gray 0px 2px 4px;	
+	-o-box-shadow: gray 0px 2px 4px;	
+	box-shadow: gray 0px 2px 4px;	
+	z-index: 3;
+}
+.linght_white .ara{
+	border-width:0 10px 10px;	
+	position:absolute;
+	right: 15px;
+	top:-10px;
+	_top:-12px;
+	border-color:white slateblue;
+	border-style:solid;
+}
+.linght_white p{
+	text-align: left;
+	padding-left: 20px;
+}
+.linght_white p span[class*=icon-]{
+	min-width: 25px;
+	display: inline-block;	
+	vertical-align: baseline;
+}
+.linght_white p:hover{background:goldenrod; color: white;}
+
+.login_info{
+	max-width: 60px;
+	line-height: 15px;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	color:white;
+}
+.user-icon{
+	max-width: 25px;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+}
+._hr{border-top: 1px solid navajowhite; border-bottom: none;border-left: none; border-right: none;}
+.icon-circle-down{color: white;}
+.icon-circle-up{color: white;}
+
+/***********************  header结束 ************************************/
+
+
+
+/***********************  sidebar开始 ************************************/
+
+.admin_content{
+	width: 100%;
+}
+.admin_content:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+.sidebar{
+	width: 15%;
+	min-height: 540px;
+	float: left;
+	font-size: 14px;
+}
+.admin_main{	
+	width:85%;
+	min-height: 540px;
+	float: left;
+	background:url(img/admin_content_bg.png) no-repeat center right;
+	background-size: contain;
+}
+.side_nav{
+	width: 100%;
+	height: 100%;
+	background-color: ghostwhite;
+	border-right: 1px solid #f2e9e9;
+}
+.side_nav li{
+	background: #F9F9F9;
+	position: relative;
+}
+.side_menu{
+	display: block;
+	line-height: 40px;
+	padding: 0px 16px 0px 7px;
+	border: 1px solid #f2e9e9;
+	border-top: none;
+	border-right: none;
+}
+.side_menu:hover{
+	background: white;
+	color: darkblue;
+}
+.side_nav  li  a span[class*=icon]{
+	display: inline-block;
+	min-width:25px;
+	font-size: 14px;
+	color: gray;
+	vertical-align: middle;
+}
+.icon-plus{
+	right: 9px;
+	top: 14px;
+	font-size:8px;
+	color: gray;
+	position: absolute;
+}
+.icon-minus{
+	right: 9px;
+	top: 14px;
+	font-size:8px;
+	color: gray;
+	position: absolute;
+}
+.nav_menu{
+	display: none;
+}
+.nav_menu li{
+	background:#f1f1f1;
+	line-height: 40px;
+	padding-left: 35px;
+	border: 1px solid #f2e9e9;
+	border-top: none;
+	border-right: none;
+	
+}
+.nav_menu li a{
+	display: block;
+}
+.nav_menu a:hover{
+	color:darkslateblue;
+}
+.active{background: white;}
+.open{display: block;}
+.close{display: none;}
+/***********************  sidebar结束 ************************************/
+
+/***********************  admin-main开始 ************************************/
+
+.main_header{
+	 line-height: 40px; background: antiquewhite;
+	 border-bottom: 1px solid lightblue;
+}
+.main_header .icon-home{
+	min-width: 35px; 
+	display: inline-block;  
+	color: black;
+	font-size: 16px;   
+	text-align: center; 
+	vertical-align: middle;
+}
+.main_header a{
+	color: darkslateblue;
+}
+.main_header a:hover{
+	text-decoration: underline;
+	
+}
+.main_content{
+	
+}
+.main_tips{
+	 line-height: 30px; 
+	 margin: 10px 20px; 
+	 padding: 10px; 
+	 background-color:navajowhite;
+}
+.main_tips .icon-cancel-circle{
+	margin-right: 10px; 
+	line-height: 30px; 
+	float: right;  
+	cursor: pointer;
+}
+.main_tips strong {color: red; margin: 0px 3px 0px;}
+.main_table{
+	width: 50%;
+	margin: 15px 20px;
+	border-collapse: collapse;
+}
+.main_table table,th,td{
+	border: 1px solid antiquewhite;
+	line-height: 2.6em;
+	padding-left: 10px;
+	color:darkslategray;
+}
+.main_table th{
+	text-align: left;
+}
+.main_table .td01{
+	width: 40%;
+}
+.main_table span[class*=icon-]{
+	color:deepskyblue;
+	display: inline-block;
+	min-width: 25px;
+	vertical-align: middle;
+}
+
+/***********************  admin-main结束************************************/

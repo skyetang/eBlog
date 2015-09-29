@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*
+ * 文章页面
+ * 
+ * author:skye
+ * date:2015.09.15
+ * version:1.0
+ * 
+ */
+/**************************添加文章，修改文章**************************************/
+.main_content{min-width: 800px;}
+.article_content{padding-left:20px; padding-top: 10px; position: relative;}
+.article_content label{font-size: 16px; margin-top: 10px; margin-bottom: 10px; font-weight: bold; display: block;}
+.article_content input{ width:60%;height: 28px; line-height:28px; padding-left: 5px; margin:5px 0px; border: 1px solid dimgray; }
+.article_content textarea{width:60%; }
+.article_content .article_mianban{width: 250px; height: 300px; position: absolute; right: 50px;top: 30px; padding: 10px; z-index: 2; }
+.article_mianban label{font-size: 16px; font-weight: bold; display: inline-block}
+.article_mianban select{width: 180px; height: 28px;}
+.article_mianban input{width:175px; height:28px; line-height:28px;}
+.article_submit{width: 180px; height: 32px;margin:20px 0px 0px 35px;}
+
+/**************************添加文章，修改文章结束**************************************/
+
+
+/**************************文章列表**************************************/
+.article_search{ width:90%; margin: 10px 20px; line-height: 50px;  background: antiquewhite;opacity: 0.8;}
+.article_search span{font-size: 14px; font-weight: bold; margin-left: 10px;}
+.article_search select{width: 120px; height: 26px; }
+.article_search input{width: 200px; height: 24px; border: 1px solid black; padding-left: 5px;}
+.article_search button{width: 80px; height: 28px; line-height: 22px;}
+.article_table {width: 90%; margin: 10px 20px; text-align: center; border-collapse: collapse; opacity: 0.9;}
+.article_table th{background: whitesmoke;}
+.article_table tr:hover{background-color: papayawhip}
+.article_table th:nth-child(1){width: 8%;}
+.article_table .stitle{width: 45%; text-align: left; color:royalblue;}
+.page{margin: 5px auto; text-align: center; line-height: 25px; }
+.page a{display:inline-block; margin: 3px;width: 25px; height: 25px; border: 1px solid lightgray; color: cornflowerblue;}
+.page span{display:inline-block;margin: 3px;width: 25px; height: 25px; border: 1px solid lightgray; color: cornflowerblue;}
+.page .current{background-color:cornflowerblue; color: white; }
+.sicon{ text-align: center; width: 10%;}
+.sicon span{min-width: 30px; display: inline-block; color: dimgray;}
+.sicon span:hover{color:dodgerblue;}
+
+/**************************文章列表结束**************************************/

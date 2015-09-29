@@ -1,0 +1,32 @@
+@charset "utf-8";
+.manager_head{ width:90%; margin: 10px 20px; line-height: 50px;opacity: 0.8;}
+.manager_head button{width: 80px; height: 28px; line-height: 22px;}
+.manager_table {width: 40%; margin: 10px 20px; border-collapse: collapse; opacity: 0.9;}
+.manager_table th{background: whitesmoke;}
+.sicon{ text-align: center;}
+.sicon span{display: inline-block; min-width: 25px; cursor: pointer;color: dimgray;}
+.sicon span:hover{color:dodgerblue;}
+
+/*dialog样式start*/
+.dialog{width: 100%; height: 100%; background:rgba(0,0,0,0.4); position: absolute;top: 0; left: 0; z-index: 6; display: none;}
+.dialog_window{width: 500px; margin: 100px auto; background: white; z-index: 8; position: relative;}
+.dia_header{line-height: 20px;padding: 10px; background-color:cornflowerblue;  }
+.dia_header span{color: white;}
+#dia_close{line-height: 20px; float: right; display: inline-block; vertical-align: middle; color:deepskyblue; cursor: pointer;}
+#dia_close:hover{color: darkslategray;}
+.dia_cont{padding-bottom: 20px;}
+.dia_input{ margin-left: 50px;margin-top:20px; font-size: 16px; color:darkslategray }
+.dia_input select,input{width: 200px; height: 30px; line-height: 30px; padding-left: 5px; border: 1px solid navajowhite;}
+.dia_input input{width: 193px; }
+.dia_bot{height: 70px; line-height: 70px; width: 100%; background-color: antiquewhite;bottom: 0; text-align: right;}
+.dia_button{width: 80px; line-height: 30px; margin-right: 20px; color: white; outline: none; border:none; cursor: pointer;}
+#dia_fire{background-color: darkgray;}
+#dia_fire:hover{background-color:slategray;}
+#dia_sure{background-color:cornflowerblue;}
+#dia_sure:hover{background-color: blueviolet;}
+.dia_bot span{display: inline-block; width: 20px; color:whitesmoke;}
+/*dialog样式end*/
+
+.manager_table th:nth-child(1){width: 8%;}
+.tips{display: inline-block;margin-left: 10px; vertical-align: middle; color: red; display: none;}
+.tips i{display: inline-block; vertical-align: middle; margin-right: 2px; }
