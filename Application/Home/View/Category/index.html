@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{$cate}-{$web.title}</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/HomeStyle/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/HomeStyle/css/common.css" />
+	</head>
+	<body>
+		<div class="main">
+			<include file="Public/header" />
+			<section>
+				<div class="content_main clearfix">
+					<div class="content_left">
+						<div class="child_category">
+							<h4>所属分类：{$cate}</h4>
+						</div>
+						<?php foreach($data as $key => $val): ?>
+						<div class="article_list">
+							<div class="article_main">
+								<h2><a title="{$val.title}" href="{$val.id}.html">{$val.title}</a></h2>
+								<small>发表日期：{$val.time}&nbsp;|&nbsp;作者：{$val.author}&nbsp;|&nbsp;浏览：{$val.view}</small>
+								<p>
+								<?php  
+									$str =htmlspecialchars_decode($val['content']);
+                					$data=strip_tags($str);//去除html标记  
+                					$str2 =mb_substr($data,0,180,'utf-8'); 
+                		    		echo $str2; 
+                		    	?>......
+								<br /><a href="{$val.id}.html">[阅读全文]</a></p>
+								<small>Tags：{$val.tags} &nbsp;|&nbsp;分类：{$val.catename}</small>
+							</div>
+						</div>
+						<?php endforeach ?>
+						<div class="page">
+							{$page}
+						</div>
+					</div>
+					<div class="content_right">
+						<div class="search">
+							<input type="text" name="search" />
+							<button type="submit">搜索</button>
+						</div>
+						<div class="tags">
+							<h4>标签:</h4>
+							<?php foreach($tags as $k => $v): ?>
+							<span><a href="javascript:;">{$v.tagname}</a></span>
+							<?php endforeach ?>
+						</div>
+						<ul class="recent_article">
+							<h4>最近发表:</h4>
+							<?php foreach($newart as $kk => $vv): ?>
+							<li>
+								<a href="{$vv.id}.html" title="{$vv.title}">
+								<?php $str = mb_substr($vv['title'],0,17,'utf-8'); echo $str;?>
+								</a>
+							</li>
+							<?php endforeach ?>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<include file="Public/footer" />
+		</div>
+	</body>
+</html>

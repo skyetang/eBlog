@@ -1,0 +1,61 @@
+<extend name='Public/base' />
+
+
+{//侧边栏}
+<block name='sidebar'>
+	<include file='Public/sidebar' nav = 'index' />
+</block>
+
+{//面包屑}
+<block name='breadcrumb'>
+	<span>控制台</span>
+</block>
+
+{//主体}
+<block name='main'>
+	 <div class="main_content">
+  	  	  <div class="main_tips">
+  	  	  	<span class="icon-notification"></span>
+  	  	  	欢迎进入<strong>eBlog后台管理系统</strong>最新版本,这是一个轻量级的内容发布系统,当前为1.0版本，还存在不少问题，后续会继续改进，欢迎交流指导！
+  	  	  	<a class="icon-cancel-circle" id="tip_close"></a>
+  	  	  </div>
+  	  	  <table class="main_table">
+  	  	  	<tr>
+  	  	  		<th colspan="2"><span class="icon-stats-dots"></span>发布内容统计</th>
+  	  	  	</tr>
+  	  	  	<tr>
+  	  	  		<td>今日发布</td><td>{$data.now}</td>
+  	  	  	</tr>
+  	  	  	<tr>
+  	  	  		<td class="td01">文章总数</td><td>{$data.art}</td>
+  	  	  	</tr>
+  	  	  		<tr>
+  	  	  		<td>分类总数</td><td>{$data.cate}</td>
+  	  	  	</tr>
+  	  	  	<tr>
+  	  	  		<td>用户总数</td><td>{$data.manager}</td>
+  	  	  	</tr>
+  	  	  	<tr>
+  	  	  		<td>浏览总数</td><td>{$data.view}</td>
+  	  	  	</tr>
+  	  	  </table>
+  	      
+  	      <table class="main_table">
+  	      	<tr>
+  	      		<th colspan="2"><span class="icon-file-text"></span>网站系统信息</th>
+  	      	</tr>
+  	      	<tr>
+  	      		<td class="td01">系统环境</td>
+  	      		<td>{$data.browser}</td>
+  	      	</tr>
+  	      	<tr>
+  	      		<td>开发版本</td>
+  	      		<td>verison 1.0</td>
+  	      	</tr>
+  	      	<tr>
+  	      		<td>作者</td>
+  	      		<td>Skye(forbetter@yeah.net)</td>
+  	      	</tr>
+  	      </table>
+	</div>
+</block>

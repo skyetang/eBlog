@@ -1,0 +1,98 @@
+<extend name='Public/base' />
+
+{//侧边栏}
+<block name='sidebar'>
+	<include file='Public/sidebar' nav = 'websetting' />
+</block>
+
+<block name='css'>
+	<style>
+		.web_setting{margin: 10px 20px;}
+  		.web_table{width: 70%; border-collapse: collapse;}
+  		.web_table .web_title{width: 40%;}
+  		.web_table th{text-align: left; padding-left: 10px; background:whitesmoke; color: palevioletred;}
+  		.web_title p{ line-height: 20px; margin: 20px; margin-left: 0;}
+  		.web_table input{width: 380px; height: 24px; padding-left: 5px; margin:10px 0px 10px 0px; border: 1px solid gray;}
+  		.web_table textarea{width: 380px; height: 80px; margin-top: 10px;}
+  		.web_setting button{width: 120px; height: 32px; margin-top: 20px;}
+  		.web_title b{margin: 0px; padding: 0px;}
+	</style>
+</block>
+
+{//面包屑}
+<block name='breadcrumb'>
+	<span>基础设置</span>
+</block>
+
+{//主体}
+<block name='main'>
+   <div class="main_content">
+   	<div class="web_setting">
+   	<form action="{:U('Admin/Websetting/edit')}" onsubmit="return $.sub(this)" method="post" name="web_set">
+   	  <table class="web_table">
+   	  	<tr>
+   	  		<th colspan="2">基本设置</th>
+   	  	</tr>
+   	  	<tr>
+   	  		<td class="web_title"><strong>网站域名</strong></td>
+   	  		<td><input type="text" value="{$data.site}" name="site" placeholder="以http://开头" /> </td>
+   	  	</tr>
+   	  		<tr>
+   	  		<td class="web_title"><strong>网站标题</strong></td>
+   	  		<td><input type="text" value="{$data.title}" name="title" /></td>
+   	  	</tr>
+   	  		<tr>
+   	  		<td class="web_title"><strong>网站关键字</strong></td>
+   	  		<td><input type="text" value="{$data.keywords}" name="keywords" /></td>
+   	  	</tr>
+   	  	<tr>
+   	  		<td class="web_title"><strong>网站描述</strong></td>
+   	  		<td><input type="text" value="{$data.desc}" name="desc" /></td>
+   	  	</tr>
+   	  	<tr>
+   	  		<td class="web_title"><strong>网站励志语</strong></td>
+   	  		<td><input type="text" value="{$data.words}" name="words" /></td>
+   	  	</tr>
+   	  		<tr>
+   	  		<td class="web_title">
+   	  			<p>
+   	  				<strong>版权信息</strong><br />
+   	  				<span>可以填入网站备案号、统计等信息</span>
+   	  			</p>
+   	  		</td>
+   	  		<td>
+   	  			<textarea  name="rights">{$data.rights}</textarea>
+   	  		</td>
+   	  	</tr>
+   	  </table>
+   	  <button type="submit">提交</button>
+   	 </form>
+   	</div>
+   </div>
+</block>
+<block name='js'>
+	<script>
+		(function($){
+			$.extend({
+				sub:function(obj){
+					var obj = $(obj);
+					$.ajax({
+						type:"post",
+						url:obj.attr('action'),
+						data:obj.serialize(),
+						success:function(respon){
+							if(respon.b == 1){
+								alert('网站信息已更新！');
+							}else if(respon.b == 2){
+								alert('网站信息已设置！');
+							}else{
+								alert('亲，出错了，萌萌哒~');
+							}
+						}
+					});
+					return false;
+				}
+			});
+		})(jQuery)
+	</script>
+</block>

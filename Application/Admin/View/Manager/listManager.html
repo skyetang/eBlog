@@ -1,0 +1,52 @@
+<extend name='Public/base' />
+
+
+{//侧边栏}
+<block name='sidebar'>
+	<include file='Public/sidebar' nav = 'manager' />
+</block>
+
+{//面包悄}
+<block name='breadcrumb'>
+	<span>管理员</span>
+</block>
+
+<block name='css'>
+		<link rel="stylesheet" href="__PUBLIC__/AdminStyle/css/cateManaComon.css" />
+</block>
+
+{//主体}
+<block name='main'>
+    <div class="main_content">
+       <div class="manager_head">
+       	<button id="new_manager" onclick="$.dialog('{:U('Admin/Manager/addManager')}',this)">新建用户</button>
+       </div>
+       <table class="manager_table" style="width: 80%;">
+       	  <tr>
+       	  	<th>ID</th>
+       	  	<th width="20%">用户名</th>
+       	  	<th>创建时间</th>
+       	  	<th>最近登录</th>
+       	  	<th>登录IP</th>
+       	  	<th>操作</th>
+       	  </tr>
+       	  <?php foreach($data as $key => $value): ?>
+       	  <tr>
+       	  	<td>{$value.id}</td>
+       	  	<td>{$value.username}</td>
+       	  	<td>{$value.creattime}</td>
+       	  	<td>{$value.logt}</td>
+       	  	<td>{$value.loginip}</td>
+       	  	<td class="sicon">
+       	  		<?php if($value['gid'] != 1): ?>
+       	  		<a href="javascript:;" onclick="$.dialog('{:U('Admin/Manager/editManager',array('id'=>$value['id']))}',this)"><span class="icon-pencil"></span></a>
+       	  		<a href="javascript:;" onclick="$.del('{:U('Admin/Manager/delManager', array('id'=>$value['id']))}')"><span class="icon-bin"></span></a>
+       	  		<?php endif ?>
+       	  	</td>
+       	  </tr>
+       	  <?php endforeach ?>
+       </table>
+    </div>
+</block>
+<block name='js'>
+</block>

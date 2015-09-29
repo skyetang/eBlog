@@ -1,0 +1,28 @@
+<div id="header" class="header">
+	<div class="heder_title">
+		<span class="icon-github2"></span>
+		eBlog内容管理系统
+	</div>
+        	<ul id="login_status" class="login_status">
+        		<li id="linght_blue" class="linght_blue">
+        			<img src="__PUBLIC__/AdminStyle/css/img/user-icon.jpg" class="user-icon"/>
+	        		<span class="login_info">
+	        			<small>欢迎回来</small>
+	        			{:session('admin.username')}
+	        		</span>
+	        		<span id="jt" class=" icon-circle-down"></span>
+	        		<div id="linght_white" class="linght_white">	
+	        		     <div class="ara"></div>
+		        	     <p>
+		        	     	<span class=" icon-lock"></span>
+		        	    	 <span onclick="$.dialog('{:U('Admin/Manager/editMana')}',this)"">修改密码</span>
+		        	     </p>
+		        	     <hr class="_hr"/>
+		        	      <p>
+		        	     	<span class="icon-switch"></span>
+		        	    	<span><a href="{:U('Login/logOut')}">退出登陆</a></span>
+		        	     </p>
+	        		</div>
+        		</li>
+        	</ul>
+      </div> 

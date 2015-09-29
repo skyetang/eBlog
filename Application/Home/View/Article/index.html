@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zn">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>{$data.title}-{$web.title}</title>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/HomeStyle/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/HomeStyle/css/common.css" />
+	</head>
+
+	<body>
+		<div class="main">
+			<include file="Public/header" />
+			<section>
+				<div class="content_main clearfix">
+					<div class="content_left">
+						<div class="child_category">
+							<h4>所属分类文章：{$data.catename}</h4>
+						</div>
+						<div class="article_info">
+							<div class="article_title">
+								<h2>{$data.title}</h2>
+								<small>发布时间：{$data.time}&nbsp;作者：{$data.author}&nbsp;浏览：{$data.view}</small>
+							</div>
+							<div class="article_con">
+								<?php
+							$str = htmlspecialchars_decode($data['content']);
+							echo $str;
+						 ?>
+							</div>
+						</div>
+						<div class="article_like">
+							<h4>相关文章推荐：</h4>
+							<ul>
+								<?php foreach($likeart as $key => $val): ?>
+									<li><a href="{$val.id}.html">{$val.title}</a></li>
+									<?php endforeach ?>
+							</ul>
+						</div>
+					</div>
+					<div class="content_right">
+						<div class="search">
+							<input type="text" name="search" />
+							<button type="submit">搜索</button>
+						</div>
+						<div class="tags">
+							<h4>标签:</h4>
+							<?php foreach($tags as $k => $v): ?>
+								<span><a href="javascript:;">{$v.tagname}</a></span>
+								<?php endforeach ?>
+						</div>
+						<ul class="recent_article">
+							<h4>最近发表:</h4>
+							<?php foreach($newart as $kk => $vv): ?>
+								<li>
+									<a href="{$vv.id}.html" title="{$vv.title}">
+										<?php
+								$str = mb_substr($vv['title'],0,17,'utf-8'); 
+								echo $str;
+							 ?>
+									</a>
+								</li>
+								<?php endforeach ?>
+						</ul>
+					</div>
+				</div>
+				<include file="Public/footer" />
+			</section>
+		</div>
+	</body>
+
+</html>

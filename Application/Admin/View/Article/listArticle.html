@@ -1,0 +1,74 @@
+<extend name='Public/base' />
+
+{//侧边栏}
+<block name='sidebar'>
+	<include file='Public/sidebar' nav = 'article' />
+</block>
+
+{//面包屑}
+<block name='breadcrumb'>
+	<span>文章列表</span>
+</block>
+
+<block name='css'>
+		<link rel="stylesheet" href="__PUBLIC__/AdminStyle/css/articleComon.css" />
+</block>
+
+{//主体}
+<block name='main'>
+    <div class="main_content">
+       <div class="article_search">
+       	 <form method="post" action="{:U('Admin/Article/listArticle')}">
+       	 <input type="hidden" value="1" name="search" />
+       	 <span>搜索</span>
+       	 分类：
+       	 <select name="cate">
+       	 	<option value="none">none</option>
+       	 	 <?php foreach($category as $key => $val): ?>
+       	 	<option value="{$val.id}">{$val.catename}</option>
+       	 	 <?php foreach($val['child'] as $k =>$v): ?>
+       	 	<option style="color: dimgray;" value="{$v.id}">└─{$v.catename}</option>
+       	 	<?php endforeach ?>
+       	 	<?php endforeach ?>
+       	 </select>
+       	作者：
+       	  <select name="auth">
+       	  	<option value="none">none</option>
+       	  	 <?php foreach($manager as $key => $vv): ?>
+		       	<option value="{$vv.username}">{$vv.username}</option>
+		     <?php endforeach ?>
+       	 </select>
+       	标题： <input type="text" name="searchname" />
+       	<button type="submit">提交</button>
+       	</form>
+       </div>
+       <table class="article_table">
+       	  <tr>
+       	  	<th>ID</th>
+       	  	<th width="10%">分类</th>
+       	  	<th width="10%">作者 </th>
+       	  	<th>标题</th>
+       	  	<th>日期</th>
+       	  	<th>操作</th>
+       	  </tr>
+       	 <?php foreach ($data as $key => $value): ?>
+       	  <tr>
+       	  	<td>{$value.id}</td>
+       	  	<td>{$value.catename}</td>
+       	  	<td>{$value.author}</td>
+       	  	<td class="stitle">{$value.title}</td>
+       	  	<td>{$value.time}</td>
+       	  	<td class="sicon">
+       	  		<a href="{:U('Admin/Article/editArticle',array('id'=>$value['id']))}"><span class="icon-pencil"></span></a>
+       	  		<a href="javascript:;" onclick="$.del('{:U('Admin/Article/delArticle', array('id'=>$value['id']))}');"><span class="icon-bin"></span></a>
+       	  	</td>
+       	  </tr>
+       	  <?php endforeach ?>
+       </table>
+       <div class="page">
+       	{$page}
+       </div>
+    </div>
+</block>
+<block name='js'>
+</block>

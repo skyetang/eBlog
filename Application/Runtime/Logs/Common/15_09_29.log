@@ -1,0 +1,224 @@
+[ 2015-09-29T03:29:38+08:00 ] 127.0.0.1 /category/html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+ERR: 无法加载模块:Index
+
+[ 2015-09-29T03:29:53+08:00 ] 127.0.0.1 /category/html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+ERR: 无法加载模块:Category
+
+[ 2015-09-29T03:30:08+08:00 ] 127.0.0.1 /category/html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+ERR: 无法加载模块:Index
+
+[ 2015-09-29T03:30:26+08:00 ] 127.0.0.1 /category/html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+ERR: 无法加载模块:Category
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /category/html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000849s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+
+[ 2015-09-29T03:31:18+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001488s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2015-09-29T03:31:39+08:00 ] 127.0.0.1 /Category/Index/cate/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+

@@ -1,0 +1,95 @@
+<extend name='Public/base' />
+
+
+{//侧边栏}
+<block name='sidebar'>
+	<include file='Public/sidebar' nav = 'article' />
+</block>
+
+{//面包悄}
+<block name='breadcrumb'>
+	<span>发表文章</span>
+</block>
+
+<block name='css'>
+	<link rel="stylesheet" href="__PUBLIC__/AdminStyle/js/datejs/jquery.datetimepicker.css" />
+		<link rel="stylesheet" href="__PUBLIC__/AdminStyle/css/articlecomon.css" />
+</block>
+
+{//主体}
+<block name='main'>
+	<div class="main_content">
+		<form  action="{:U('Admin/Article/doUpdate')}" onsubmit="return $.update(this)" method="post" name="articles">
+		<div  class="article_content">
+			<input type="text" value="{$data.id}" name="id" hidden="true"/>
+			<label for="article_title">标题</label>
+			<input type="text" id="article_title" name='title' value="{$data.title}" placeholder="未命名"/><br />
+			<label for="article_cont">正文</label>
+			<textarea id="edit_container" name="cont">{$data.cont}</textarea>
+			<div class="article_mianban">
+				<label>分类</label>
+	       	 	<select name="category">
+	       	 	 <?php foreach($category as $key => $val): ?>
+		       	 	<option <?php if($val['id'] == $data['cateid']):?>selected="selected"<?php endif;?> value="{$val.id}">{$val.catename}</option>
+		       	 	 <?php foreach($val['child'] as $k =>$v): ?>
+		       	 		<option style="color: dimgray;" <?php if($v['id'] == $data['cateid']):?>selected="selected"<?php endif;?> value="{$v.id}">└─{$v.catename}</option>
+		       	 	<?php endforeach ?>
+	       	 	<?php endforeach ?>
+		       	</select><br />
+		       	<label>作者</label>
+		       	<select name="author">
+		       	 	 <?php foreach($manager as $key => $vv): ?>
+		       	 		<option <?php if($vv['username'] == $data['author']):?>selected="selected"<?php endif;?> value="{$vv.username}">{$vv.username}</option>
+		       	 	<?php endforeach ?>
+		       	</select><br />
+		       	 <label>时间</label>
+		       	 <input type="text" id="datetimepicker" value="{$data.time}" name="time"><br />
+		       	 <label>标签</label>
+		       	 <input type="text" name="tags" value="{$data.tags}" />
+		       	 <button type="submit" class="article_submit">提交</button>
+			</div>
+		</div>
+		</form>
+	</div>
+</block>
+
+<block name='js'>
+	<script type="text/javascript" src="__PUBLIC__/AdminStyle/js/uEditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/AdminStyle/js/uEditor/ueditor.all.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/AdminStyle/js/datejs/jquery.datetimepicker.js"></script>
+	<script>
+		 var ue = UE.getEditor('edit_container',{
+		 	initialFrameWidth:650,
+		 	initialFrameHeight:200,
+		 	zIndex:1,
+		 });
+		 $(function(){
+		 	$('#datetimepicker').datetimepicker();
+		 	$.extend({
+		 		update:function(obj){
+		 			if($('#article_title').val() == ''){
+		 				alert('标题不能为空');
+		 			}else{
+		 			var obj = $(obj);
+		 			$.ajax({
+		 				type:"post",
+		 				url:obj.attr('action'),
+		 				data:obj.serialize(),
+		 				success:function(respon){
+		 					if(respon.code >0){
+		 						alert(respon.msg);
+		 						window.location.href = respon.url;
+		 					}else{
+		 						alert(respon.msg);
+		 						window.location.href = respon.url;
+		 					}		
+		 				}
+		 			});
+		 			}
+		 			return false;
+		 			
+		 		}
+		 	});
+		 });
+	</script>
+</block>

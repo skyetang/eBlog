@@ -1,0 +1,57 @@
+<extend name='Public/base' />
+
+
+{//侧边栏}
+<block name='sidebar'>
+	<include file='Public/sidebar' nav = 'category' />
+</block>
+
+{//面包悄}
+<block name='breadcrumb'>
+	<span>分类列表</span>
+</block>
+
+<block name='css'>
+		<link rel="stylesheet" href="__PUBLIC__/AdminStyle/css/cateManaComon.css" />
+</block>
+
+{//主体}
+<block name='main'>
+   <div class="main_content">
+       <div class="manager_head">
+       <button id="new_manager" onclick="$.dialog('{:U('Admin/Category/addCategory')}',this)">新建分类</button>
+       </div>
+       <table class="manager_table">
+       	  <tr>
+       	  	<th width="15%">ID</th>
+       	  	<th width="15%">排序</th>
+       	  	<th>名称 </th>
+       	  	<th width="20%">操作</th>
+       	  </tr>
+         <?php foreach($category as $key => $val): ?>
+       	  <tr>
+       	  	<td>{$val.id}</td>
+       	  	<td>{$val.orders}</td>
+       	  	<td>{$val.catename}</td>
+       	  	<td class="sicon">
+       	  		 <a href="javascript:;" onclick="$.dialog('{:U('Admin/Category/editCategory',array('id'=>$val['id']))}',this)"><span class="icon-pencil"></span></a>
+       	  		<a href="javascript:;" onclick="$.delcate('{:U('Admin/Category/delCate', array('id'=>$val['id']))}')"><span class="icon-bin"></span></a>
+       	  	</td>
+       	  </tr>
+       	     <?php foreach($val['child'] as $k =>$v): ?>
+       	      <tr>
+       	  		<td>{$v.id}</td>
+       	  		<td>{$v.orders}</td>
+       	  		<td>└─{$v.catename}</td>
+       	  		<td class="sicon">
+                 <a href="javascript:;" onclick="$.dialog('{:U('Admin/Category/editCategory',array('id'=>$v['id']))}',this)"><span class="icon-pencil"></span></a>
+       	  		<a href="javascript:;" onclick="$.delcate('{:U('Admin/Category/delCate', array('id'=>$v['id']))}')"><span class="icon-bin"></span></a>
+       	  		</td>
+       	 	 </tr>
+       	 	 <?php endforeach ?>
+        <?php endforeach ?>
+       </table>
+   </div>
+</block>
+<block name='js'>
+</block>

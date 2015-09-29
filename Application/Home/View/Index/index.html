@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+	<meta charset="utf-8">
+	<title>{$web.title}-{$web.desc}</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/HomeStyle/css/index.css" />
+</head>
+<body>
+	<div id="main">
+		<include file="Public/header" />
+		<section>
+			<div class="content">
+				<div class="word">
+					<h4>一句话<small>/A Word</small></h4>
+					<p>{$web.words}</p>
+				</div>
+				<div class="article">
+					<h4>一篇文章<small>/An Article</small></h4>
+					<div class="article_main">
+						<h2><a href="{$data.id}.html">{$data.title}</a></h2>
+						<small>时间：{$data.time}&nbsp;&nbsp;作者：{$data.author}</small>
+						<p>
+						<?php $str =htmlspecialchars_decode($data['content']);
+            			  $datas=strip_tags($str);//去除html标记  
+            			  $str2 =mb_substr($datas,0,100,'utf-8'); 
+            		     echo $str2; ?>......</p><small><a href="{$data.id}.html">[阅读全文]</a></small>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="rights"><small> {$web.rights}</small> </div>
+		</footer>
+	</div>
+</body>
+</html>

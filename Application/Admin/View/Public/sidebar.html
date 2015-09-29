@@ -1,0 +1,51 @@
+	<div class="sidebar" id="sidebar">
+	      	  	<ul class="side_nav">
+	      	  		<li>
+	      	  			<a href="{:U('Admin/Index/index')}" <if condition="[nav] eq 'index'">class="side_menu active"<else/>class="side_menu"</if>>
+	      	  				<span class="icon-home"></span>
+	      	  				<span>控制台</span>
+	      	  			</a> 		
+	      	  		</li>
+	      	  		<li>
+	      	  			<a href="javascript:;" <if condition="[nav] eq 'article'">class="side_menu active"<else/>class="side_menu"</if>>
+	      	  				<span class="icon-bookmarks"></span>
+	      	  				<span>文章管理</span>
+	      	  				<b class="icon-plus"></b>
+	      	  			</a>
+	      	  			<ul class="nav_menu">
+	      	  				<li><a href="{:U('Admin/Article/listArticle')}">文章列表</a></li>
+	      	  				<li><a href="{:U('Admin/Article/addArticle')}">发表文章</a></li>
+	      	  			</ul>
+	      	  		</li>
+	      	  		<li>
+	      	  			<a href="javascript:;" <if condition="[nav] eq 'category'">class="side_menu active"<else/>class="side_menu"</if>>
+	      	  				<span class="icon-list"></span>
+	      	  				<span>分类管理</span>
+	      	  				<b class="icon-plus"></b>
+	      	  			</a>
+	      	  			<ul class="nav_menu">
+	      	  				<li><a href="{:U('Admin/Category/listCategory')}">所有分类</a></li>
+	      	  			</ul>
+	      	  		</li>
+	      	  		<li>
+	      	  			<a href="javascript:;" <if condition="[nav] eq 'manager'">class="side_menu active"<else/>class="side_menu"</if>>
+	      	  				<span class="icon-users"></span>
+	      	  				<span>用户管理</span>
+	      	  				<b class="icon-plus"></b>
+	      	  			</a>
+	      	  			<ul class="nav_menu">
+	      	  				<li><a href="{:U('Admin/Manager/listManager')}">用户列表</a></li>
+	      	  			</ul>
+	      	  		</li>
+	      	  		<li>
+	      	  			<a href="javascript:;" <if condition="[nav] eq 'websetting'">class="side_menu active"<else/>class="side_menu"</if>>
+	      	  				<span class="icon-cogs"></span>
+	      	  				<span>系统设置</span>
+	      	  				<b class="icon-plus"></b>
+	      	  			</a>
+	      	  			<ul class="nav_menu">
+	      	  				<li><a href="{:U('Admin/Websetting/info')}">基础设置</a></li>
+	      	  			</ul>
+	      	  		</li>
+	      	  	</ul>
+</div>

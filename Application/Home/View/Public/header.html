@@ -1,0 +1,57 @@
+<header>
+	<div class="header">
+		<a href="javascript:;" class="logo">
+			<span>{$web.title}</span>
+		</a>
+		<ul id="nav" class="nav">
+			<li>
+				<a href="{$web.site}">
+					<div>首页</div>
+				</a>
+			</li>
+			<?php foreach($category as $key => $val): ?>
+			<li id="{$val.id}">
+				<a href="{$val.catealias}">
+					<div>{$val.catename}</div>
+				</a>
+				<div id="sub_{$val.id}" class="category clearfix">
+					<div class="category_left">
+						<dl class="category_ul">
+						<?php foreach($val[child] as $k => $v): ?>
+						<a href="{$v.catealias}"><dt>{$v.catename}</dt></a>
+						<?php endforeach ?>
+						</dl>
+					</div>
+					<div class="category_right">
+						<h4>最新文章</h4>
+						<?php foreach($val[child2] as $kk => $vv):  ?>
+						<h5><a href="{$vv.id}"><?php $str = mb_substr($vv['title'],0,21,'utf-8');  echo $str;?></a></h5>
+						<?php endforeach ?>
+					</div>
+				</div>
+			</li>
+			<?php endforeach ?>
+		</ul>
+	</div>
+</header>
+<script>
+	window.onload = function() {
+		var oUl = document.getElementById('nav');
+		var aLi = document.getElementsByTagName('li');
+		var oDiv = null;
+		for (var i = 0; i < aLi.length; i++) {
+			aLi[i].onmouseover = function() {
+				oDiv = document.getElementById('sub_' + this.id);
+				if (oDiv) {
+					oDiv.style.display = 'block';
+				}
+			}
+			aLi[i].onmouseout = function() {
+				oDiv = document.getElementById('sub_' + this.id);
+				if (oDiv) {
+					oDiv.style.display = 'none';
+				}
+			}
+		}
+	}
+</script>

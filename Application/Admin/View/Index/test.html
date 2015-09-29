@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>view/index.html</title>
+	</head>
+	<body>
+		<!--<?php 
+			echo $name;
+		?>
+		<br />
+		<?php 
+			echo $sex;
+		?>             
+        -->
+        <!--
+        1、 输出传递过来的值
+         
+        {$name}<br />
+        {$sex}<br />
+        {$age|default='no'}<br />
+        
+        2、变量的循环输出
+		<volist name='person' id='data' offset='1' length='2' >
+			{$data['name']}-----{$data['age']}<br />
+		</volist>
+		<volist name='per' id='data'>
+			{$data}<br />
+		</volist>
+		
+		<foreach name='per' item='data'>
+			{$data}<br />
+		</foreach>
+		
+		3、for 循环
+		eq =   neq !=    gt >    egt >=    lt <   elt<=   heq===   nheq!===  
+		-->
+		
+        <!--<for start='1' end='10'>
+        	{$i}<br />
+        </for>
+		
+		<for start='1' end='10' comparison='lt' name='i' step='1'>
+        	{$i}<br />
+        </for>
+        
+        4、if 判断
+        -->
+        <!--<if condition='$nums gt 10'>大于10
+        	<elseif conditon='$nums lt 10'/>小于10
+        	<else/>等于10
+        </if>
+        
+        5、switch 判断
+        -->
+        <!--<switch name='nums'>
+        	<case value='12'>12好大</case>
+        	<case value='2'>2好小</case>
+        	<default>不大不小</default>
+        </switch>
+       
+        6、比较标签
+        -->
+        <!--<eq name='num' value='10'>等于10<else/>不等于10</eq>
+        <compare name='num' value='10' type='lt'>小于10<else/>大于10</compare>
+       
+       7、区间比较标签 in notin between
+        -->
+        <!--<in name='num' value='1,2,3'>在这个区间<else/>不在这里</in>
+        
+        <range name='num' value='1,2' type='in'>没有这个数<else/>有这个数</range>
+        
+        <between name='num' value='1,10'>这个数在1~10之间<else/>不在这区间内</between>
+        
+        8、三元运算
+        -->
+        {$num>12?'大于12','小于12'}
+	</body>
+</html>

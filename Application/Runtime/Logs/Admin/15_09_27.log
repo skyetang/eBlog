@@ -1,0 +1,1313 @@
+[ 2015-09-27T15:58:00+08:00 ] 127.0.0.1 /Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2015-09-27T15:58:00+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001526s ]
+
+[ 2015-09-27T15:58:06+08:00 ] 127.0.0.1 /Admin/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001827s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\LoginController.class.php on line 23 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `blog_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `blog_admin` SET `username`='admin',`logt`='2015/09/27 15:58',`loginip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0033s ]
+
+[ 2015-09-27T15:58:06+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `time` LIKE '2015/09/27%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0049s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0052s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_admin` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 84 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 90 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 101 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 111 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2015-09-27T15:58:10+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0045s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001721s ]
+
+[ 2015-09-27T15:58:15+08:00 ] 127.0.0.1 /Admin/Article/delArticle/id/57.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0035s ]
+SQL: DELETE FROM `blog_article` WHERE `id` = 57 [ RunTime:0.0030s ]
+
+[ 2015-09-27T15:58:15+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0036s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2015-09-27T15:58:21+08:00 ] 127.0.0.1 /Admin/Article/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant addArticle - assumed 'addArticle' F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 87 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 93 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 104 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 114 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2015-09-27T15:58:36+08:00 ] 127.0.0.1 /Admin/Article/doAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0038s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 82 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `blog_category` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `blog_article` (`title`,`content`,`time`,`author`,`category`,`catename`,`tags`) VALUES ('hello world','&lt;p&gt;hellow world&lt;br/&gt;&lt;/p&gt;','2015/09/27 15:58','admin','53','Html+Css','hello') [ RunTime:0.0194s ]
+SQL: SELECT * FROM `blog_tags` WHERE `tagname` = 'hello' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `blog_tags` (`tagname`,`artid`) VALUES ('hello','58') [ RunTime:0.0037s ]
+
+[ 2015-09-27T15:58:37+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0038s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2015-09-27T16:14:20+08:00 ] 127.0.0.1 /Admin/Article/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant addArticle - assumed 'addArticle' F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 87 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 93 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 104 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 114 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2015-09-27T16:14:34+08:00 ] 127.0.0.1 /Admin/Article/doAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 82 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `blog_category` WHERE `id` = 57 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `blog_article` (`title`,`content`,`time`,`author`,`category`,`catename`,`tags`) VALUES ('123321','&lt;p&gt;123123&lt;br/&gt;&lt;/p&gt;','2015/09/27 16:14','admin','57','Jquery','') [ RunTime:0.0031s ]
+SQL: SELECT * FROM `blog_tags` WHERE `tagname` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `blog_tags` (`tagname`,`artid`) VALUES ('','59') [ RunTime:0.0026s ]
+
+[ 2015-09-27T16:14:36+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0037s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2015-09-27T16:16:04+08:00 ] 127.0.0.1 /Admin/Article/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant addArticle - assumed 'addArticle' F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 87 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 93 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 104 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 114 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2015-09-27T16:16:12+08:00 ] 127.0.0.1 /Admin/Article/doAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0037s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 82 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `blog_category` WHERE `id` = 56 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `blog_article` (`title`,`content`,`time`,`author`,`category`,`catename`,`tags`) VALUES ('11111111111','&lt;p&gt;11111111111&lt;br/&gt;&lt;/p&gt;','2015/09/27 16:16','admin','56','JavaScript','') [ RunTime:0.0255s ]
+SQL: SELECT * FROM `blog_tags` WHERE `tagname` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `blog_tags` SET `tagname`='',`artid`='59,60' WHERE `id` = 12 [ RunTime:0.0071s ]
+
+[ 2015-09-27T16:16:13+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0038s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2015-09-27T16:19:56+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0039s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2015-09-27T16:19:58+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0043s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `blog_category` WHERE `pid` = 53  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `category` IN ('53','54','55') ORDER BY id DESC LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `blog_article` WHERE `category` IN ('53','54','55') ORDER BY id DESC LIMIT 0,1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2015-09-27T16:20:01+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0042s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `blog_category` WHERE `pid` = 56  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `category` IN ('56','57') ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` WHERE `category` IN ('56','57') ORDER BY id DESC LIMIT 0,2   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2015-09-27T16:28:13+08:00 ] 127.0.0.1 /Admin/Article/editArticle/id/60.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0037s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 125 行.
+SQL: SELECT * FROM `blog_article` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant editArticle - assumed 'editArticle' F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\a21bf2b82396b11cdd86210fe3490d95.php 第 87 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\a21bf2b82396b11cdd86210fe3490d95.php 第 93 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\a21bf2b82396b11cdd86210fe3490d95.php 第 104 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\a21bf2b82396b11cdd86210fe3490d95.php 第 114 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\a21bf2b82396b11cdd86210fe3490d95.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000740s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2015-09-27T16:28:18+08:00 ] 127.0.0.1 /Admin/Article/doUpdate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0038s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 146 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: UPDATE `blog_article` SET `title`='11111111111',`content`='&lt;p&gt;11111111111&lt;br/&gt;&lt;/p&gt;',`time`='2015/09/27 16:16',`author`='admin',`category`='57',`tags`='' WHERE `id` = 60 [ RunTime:0.0031s ]
+
+[ 2015-09-27T16:28:19+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0036s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001176s ]
+
+[ 2015-09-27T16:30:07+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+
+[ 2015-09-27T16:30:24+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002311s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0047s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2015-09-27T16:30:27+08:00 ] 127.0.0.1 /Admin/Article/editArticle/id/60.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0033s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 125 行.
+SQL: SELECT * FROM `blog_article` WHERE `id` = 60 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant editArticle - assumed 'editArticle' F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 142 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\a21bf2b82396b11cdd86210fe3490d95.php 第 87 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\a21bf2b82396b11cdd86210fe3490d95.php 第 93 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\a21bf2b82396b11cdd86210fe3490d95.php 第 104 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\a21bf2b82396b11cdd86210fe3490d95.php 第 114 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\a21bf2b82396b11cdd86210fe3490d95.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2015-09-27T16:30:31+08:00 ] 127.0.0.1 /Admin/Article/doUpdate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0033s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 146 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `blog_category` WHERE `id` = 57 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `blog_article` SET `title`='11111111111',`content`='&lt;p&gt;11111111111&lt;br/&gt;&lt;/p&gt;',`time`='2015/09/27 16:16',`author`='admin',`category`='57',`catename`='Jquery',`pid`='56',`tags`='' WHERE `id` = 60 [ RunTime:0.0031s ]
+
+[ 2015-09-27T16:30:31+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0039s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2015-09-27T16:31:22+08:00 ] 127.0.0.1 /Admin/Article/delArticle/id/58.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0063s ]
+SQL: DELETE FROM `blog_article` WHERE `id` = 58 [ RunTime:0.0030s ]
+
+[ 2015-09-27T16:31:22+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0042s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001576s ]
+
+[ 2015-09-27T16:31:23+08:00 ] 127.0.0.1 /Admin/Article/delArticle/id/59.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0039s ]
+SQL: DELETE FROM `blog_article` WHERE `id` = 59 [ RunTime:0.0029s ]
+
+[ 2015-09-27T16:31:24+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0038s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2015-09-27T16:31:25+08:00 ] 127.0.0.1 /Admin/Article/delArticle/id/60.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0048s ]
+SQL: DELETE FROM `blog_article` WHERE `id` = 60 [ RunTime:0.0028s ]
+
+[ 2015-09-27T16:31:25+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0041s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2015-09-27T16:31:26+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0039s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2015-09-27T16:31:27+08:00 ] 127.0.0.1 /Admin/Article/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant addArticle - assumed 'addArticle' F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 87 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 93 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 104 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 114 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2015-09-27T16:31:33+08:00 ] 127.0.0.1 /Admin/Article/doAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0034s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 82 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `blog_category` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `blog_article` (`title`,`content`,`time`,`author`,`category`,`catename`,`pid`,`tags`) VALUES ('111111111','&lt;p&gt;1111111111111&lt;br/&gt;&lt;/p&gt;','2015/09/27 16:31','admin','53','Html+Css','0','') [ RunTime:0.0030s ]
+SQL: SELECT * FROM `blog_tags` WHERE `tagname` = '' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `blog_tags` SET `tagname`='',`artid`='59,60,61' WHERE `id` = 12 [ RunTime:0.0034s ]
+
+[ 2015-09-27T16:31:34+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0037s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2015-09-27T16:31:35+08:00 ] 127.0.0.1 /Admin/Article/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant addArticle - assumed 'addArticle' F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 87 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 93 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 104 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 114 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001447s ]
+
+[ 2015-09-27T16:31:43+08:00 ] 127.0.0.1 /Admin/Article/doAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 82 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `blog_category` WHERE `id` = 54 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `blog_article` (`title`,`content`,`time`,`author`,`category`,`catename`,`pid`,`tags`) VALUES ('222222222','&lt;p&gt;22222222222222&lt;br/&gt;&lt;/p&gt;','2015/09/27 16:31','admin','54','html','53','') [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_tags` WHERE `tagname` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `blog_tags` SET `tagname`='',`artid`='59,60,61,62' WHERE `id` = 12 [ RunTime:0.0027s ]
+
+[ 2015-09-27T16:31:44+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0038s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001796s ]
+
+[ 2015-09-27T16:31:45+08:00 ] 127.0.0.1 /Admin/Article/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant addArticle - assumed 'addArticle' F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 87 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 93 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 104 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 114 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\616fec8a606cc15aae62d9eacc67fb16.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2015-09-27T16:31:50+08:00 ] 127.0.0.1 /Admin/Article/doAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0037s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 82 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT * FROM `blog_category` WHERE `id` = 55 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `blog_article` (`title`,`content`,`time`,`author`,`category`,`catename`,`pid`,`tags`) VALUES ('33333333333','&lt;p&gt;3333333333333&lt;br/&gt;&lt;/p&gt;','2015/09/27 16:31','admin','55','Css','53','') [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_tags` WHERE `tagname` = '' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `blog_tags` SET `tagname`='',`artid`='59,60,61,62,63' WHERE `id` = 12 [ RunTime:0.0037s ]
+
+[ 2015-09-27T16:31:52+08:00 ] 127.0.0.1 /Admin/Article/listArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `blog_category` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `blog_category` ORDER BY orders ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_admin` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `blog_tags` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for I(), called in F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php on line 28 and defined F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name F:\TestWeb\BlogCodes\ThinkPHP\Common\functions.php 第 339 行.
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 52 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` ORDER BY id DESC LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: search F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 60 行.
+SQL: SELECT * FROM `blog_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_admin`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: where F:\TestWeb\BlogCodes\Application\Admin\Controller\ArticleController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 86 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 92 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 103 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 113 行.
+NOTIC: [8] Use of undefined constant article - assumed 'article' F:\TestWeb\BlogCodes\Application\Runtime\Cache\Admin\d89b009b2570ad1a08ae99edaad4cbc9.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001717s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+

@@ -1,0 +1,3 @@
+<?php
+//000000000000a:2:{i:66;a:7:{s:2:"id";s:2:"66";s:8:"catename";s:9:"web技术";s:9:"catealias";s:3:"web";s:3:"pid";s:1:"0";s:4:"path";s:0:"";s:6:"orders";s:1:"0";s:5:"child";a:2:{i:67;a:6:{s:2:"id";s:2:"67";s:8:"catename";s:4:"html";s:9:"catealias";s:4:"html";s:3:"pid";s:2:"66";s:4:"path";s:0:"";s:6:"orders";s:1:"0";}i:68;a:6:{s:2:"id";s:2:"68";s:8:"catename";s:3:"css";s:9:"catealias";s:3:"css";s:3:"pid";s:2:"66";s:4:"path";s:0:"";s:6:"orders";s:1:"0";}}}i:69;a:7:{s:2:"id";s:2:"69";s:8:"catename";s:3:"PHP";s:9:"catealias";s:3:"php";s:3:"pid";s:1:"0";s:4:"path";s:0:"";s:6:"orders";s:1:"0";s:5:"child";N;}}
+?>

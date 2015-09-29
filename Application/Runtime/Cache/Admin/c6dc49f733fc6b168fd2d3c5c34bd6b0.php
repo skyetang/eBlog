@@ -1,0 +1,38 @@
+<?php if (!defined('THINK_PATH')) exit();?>    	<form method="post" onsubmit="return false">
+    	<div class="dialog_window">
+    		 <div class="dia_header">
+    		 	<span class="icon-list"></span>
+    		    <span>修改分类</span>
+    		    <span id="dia_close" class="icon-cross"></span>
+    		 </div>
+    		 <div class="dia_cont">
+    		 	<div class="dia_input">
+    		 	<input type="text" value="<?php echo ($slecate["id"]); ?>" name="id" hidden="true">
+    		 	<label for="catepid">选择分类：</label>
+    		 	<select id="catepid" class="dia_sele" name="catepid">
+    		 		<option value="0">父级</option>
+    		 		 <?php foreach($category as $key => $val): ?>
+    		 		<option value="<?php echo ($val["id"]); ?>" <?php if($val['id'] == $slecate['pid']):?>selected="selected"<?php endif;?> ><?php echo ($val["catename"]); ?></option>
+    		 		
+       				 <?php endforeach ?>
+    		 	</select>
+    		 	</div>
+    		 	<div class="dia_input">
+    		 	<label for="catename">分类名称：</label>
+    		 	<input type="text" name="catename" value="<?php echo ($slecate["catename"]); ?>" id="catename" />
+    		 	</div>
+    		 	<div class="dia_input">
+    		 	<label for="catealia">分类别名：</label>
+    		 	<input type="text" name="catealias" value="<?php echo ($slecate["catealias"]); ?>" id="catealia" />
+    		 	</div>
+    		 	<div class="dia_input">
+    		 	<label for="order">排序位置：</label>
+    		 	<input type="text" value="<?php echo ($slecate["orders"]); ?>" name="order" id="order" />
+    		 	</div>
+    		 </div>
+    		 <div class="dia_bot">
+    		 	<button id="dia_fire" class="dia_button"><span class="icon-cross"></span>取消</button>
+    		 	<button id="dia_sure" class="dia_button" onclick="$.action('<?php echo U('Admin/Category/doUpdate');?>',this)"><span class="icon-checkmark"></span>确定</button>
+    		 </div>
+    	</div>
+    	</form>
